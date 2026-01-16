@@ -98,6 +98,19 @@ button {
 button:hover {
     background-color: rgba(184, 184, 184, 0.305);
 }
+@media only screen and (max-width: 1024px) {
+    #backgroundLeft {
+        background-position: center;
+    }
+    #backgroundRight {
+        background-position: center;
+    }
+    button {
+        width: 150px;
+        height: 60px;
+        font-size: 1rem;
+    }
+}
 @media only screen and (max-width: 660px) {
     #backgroundLeft {
         background-position: center;
