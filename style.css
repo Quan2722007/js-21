@@ -10,6 +10,7 @@ body {
     display: flex;
     width: 100%;
     height: 100vh;
+    font-size: 16px;
 }
 #backgroundLeft {
     background-image: url("assets/z7425741299992_6a92f1a40fa0be193e0e182068f6c7f8.jpg");
@@ -33,11 +34,12 @@ body {
     top: 300px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 3rem;
+    font-size: clamp(1.2rem, 5vw, 3rem);
     font-weight: 700;
     color: white;
     width: 300px;
     z-index: 10;
+    text-align: center;
 }
 #backgroundLeft .container .buttonLight {
     position: absolute;
@@ -67,11 +69,12 @@ body {
     top: 300px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 3rem;
+    font-size: clamp(1.2rem, 5vw, 3rem);
     font-weight: 700;
     color: white;
     z-index: 10;
     width: 300px;
+    text-align: center;
 }
 #backgroundRight .container .buttonRight {
     position: absolute;
@@ -94,4 +97,29 @@ button {
 }
 button:hover {
     background-color: rgba(184, 184, 184, 0.305);
+}
+@media only screen and (max-width: 660px) {
+    #backgroundLeft {
+        background-position: center;
+    }
+    #backgroundLeft .container .title {
+        top: 250px;
+    }
+    #backgroundLeft .container .buttonLight {
+        top: 320px;
+    }
+    #backgroundRight {
+        background-position: center;
+    }
+    #backgroundRight .container .title {
+        top: 250px;
+    }
+    #backgroundRight .container .buttonRight {
+        top: 320px;
+    }
+    button {
+        width: 120px;
+        height: 60px;
+        font-size: 1rem;
+    }
 }
