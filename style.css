@@ -1,0 +1,97 @@
+html {
+    font-family: Poppins;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+#backgroundLeft {
+    background-image: url("assets/z7425741299992_6a92f1a40fa0be193e0e182068f6c7f8.jpg");
+    width: 50%;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    transition: 0.5s ease;
+}
+#backgroundLeft .container .background {
+    background-color: rgba(103, 144, 255, 0.871);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+#backgroundLeft .container .title {
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    width: 300px;
+    z-index: 10;
+}
+#backgroundLeft .container .buttonLight {
+    position: absolute;
+    top: 380px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#backgroundRight {
+    background-image: url("assets/z7425741299971_2a866dabe8a8ebd4ec6f615f0e3db499.jpg");
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    transition: 0.5s ease;
+}
+#backgroundRight .container .background {
+    background-color: rgba(0, 0, 0, 0.392);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+#backgroundRight .container .title {
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    z-index: 10;
+    width: 300px;
+}
+#backgroundRight .container .buttonRight {
+    position: absolute;
+    top: 380px;
+    right: 50%;
+    transform: translateX(50%);
+}
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 70px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: 2px solid white;
+    color: white;
+    background: transparent;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgba(184, 184, 184, 0.305);
+}
